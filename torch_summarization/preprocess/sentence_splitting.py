@@ -1,5 +1,5 @@
-#来自https://github.com/bojone/bert4keras/blob/master/bert4keras/snippets.py
-def text_segmentate(text, maxlen, seps='\n', strips=None):
+#参考https://github.com/bojone/bert4keras/blob/master/bert4keras/snippets.py
+def text_segmentate(text:str, maxlen:int=1, seps:str='。：（）；:“”，\n', strips:str=None):
     """将文本按照标点符号划分为若干个短句
     """
     text = text.strip().strip(strips)
