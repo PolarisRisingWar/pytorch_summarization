@@ -58,9 +58,12 @@ print(processed_document)
 # 2. tokenize
 
 # 3. embedding（如果直接使用预训练transformer模型建模的话就不需要，因为预训练模型本身就会训练embedding层）
+# 如果直接使用传统的文本表征方式也将划分在本部分：①word2vec（使用gensim） ②sklearn.feature_extraction.text ③其他自定义的文本特征
 
-# 4. 模型
+# 4. 模型构建和运算
 ## 4.1 无监督
 ## 4.2 有监督
 ## 4.2.1 训练、验证、调参
 ## 4.2.2 推理
+
+# 5. 模型的结果评估
